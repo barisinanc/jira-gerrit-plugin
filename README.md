@@ -1,8 +1,9 @@
 JIRA-Gerrit integration plugin
 ==============================
-&copy; Copyright 2012 MeetMe, Inc.
+Forked from MeetMe, Inc. Motivation in this fork to implement multiple instance support.
 
-Maintainer: Joe Hansche <jhansche@meetme.com>
+Original Maintainer: Joe Hansche <jhansche@meetme.com>
+Fork Maintainer: Baris Inanc baris<at-please-no-spam>barbardata.com
 
 
 Licensing
@@ -56,13 +57,4 @@ Features
 
 TODO
 ----
-* Unit Tests (partial)
-* Possibly per-user SSH key configurations (instead of everything done as
-  the JIRA user)
-* Possibly allow a second "suexec" SSH key so the JIRA user can spoof the
-  acting JIRA user as a Gerrit user
-* ~~Extend SshConnection in order to obtain stderr content, to know if a
-  command failed~~; this is no longer required, after our patch was accepted
-  to the [gerrit-trigger-plugin](https://github.com/jenkinsci/gerrit-trigger-plugin/pull/26)
-  project
-* Resolve `gerrit-events` dependency so it does not rely on a SNAPSHOT version
+* Support for multiple instances.
